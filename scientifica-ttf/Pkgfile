@@ -5,11 +5,11 @@
 
 name=scientifica-ttf
 version=2.1
-release=2
+release=3
 source=(https://github.com/NerdyPepper/scientifica/releases/download/v$version/scientifica-v$version.tar)
 
 build() {
-	cd scientifica-v$version
-	mkdir -p /usr/share/fonts
-	cp ttf/* /usr/share/fonts
+	cd scientifica
+	mkdir -p $PKG/usr/share/fonts
+	cp ttf/* $PKG/usr/share/fonts
 }
