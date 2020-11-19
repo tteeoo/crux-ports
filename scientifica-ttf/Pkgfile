@@ -1,0 +1,15 @@
+# Description: Tall and condensed bitmap font for geeks (TTF version)
+# URL: https://github.com/NerdyPepper/scientifica
+# Maintainer: Theo Henson, theodorehenson at protonmail dot com
+# Depends on: 
+
+name=scientifica-ttf
+version=2.1
+release=1
+source=(https://github.com/NerdyPepper/scientifica/releases/download/v$version/scientifica-v$version.tar)
+
+build() {
+	cd $name-$version
+	mkdir -p /usr/share/fonts
+	cp ttf/* /usr/share/fonts
+}

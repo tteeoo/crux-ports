@@ -1,4 +1,4 @@
-# Description:  The user-friendly command line shell
+# Description: The user-friendly command line shell
 # URL: https://fishshell.com/
 # Maintainer: Theo Henson, theodorehenson at protonmail dot com
 # Depends on: cmake gettext ncurses libpcre2
