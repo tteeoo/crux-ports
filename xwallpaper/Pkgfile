@@ -10,7 +10,6 @@ source=(https://github.com/stoeckmann/$name/releases/download/v$version/$name-$v
 
 build() {
 	cd $name-$version
-	./autogen.sh
 	./configure
 	make
 	make DESTDIR=$PKG install
