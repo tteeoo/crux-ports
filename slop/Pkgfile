@@ -1,0 +1,16 @@
+# Description: An application that queries for a selection from the user and prints the region to stdout.
+# URL: https://github.com/naelstrof/slop
+# Maintainer: Theo Henson, theodorehenson at protonmail dot com
+# Depends on: cmake xorg-libxext glm glew
+
+name=slop
+version=7.5
+release=1
+source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
+
+build() {
+	cd $name-$version
+	cmake -DCMAKE_INSTALL_PREFIX="/usr" ./
+	make
+	make DESTDIR=$PKG install
+}
