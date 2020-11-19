@@ -1,0 +1,18 @@
+# Description:  The user-friendly command line shell
+# URL: https://fishshell.com/
+# Maintainer: Theo Henson, theodorehenson at protonmail dot com
+# Depends on: cmake gettext ncurses libpcre2
+
+name=fish
+version=3.1.2
+release=1
+source=(https://github.com/fish-shell/fish-shell/releases/download/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	mkdir build
+	cd build
+	cmake -DCMAKE_INSTALL_PREFIX="/usr" ../
+	make
+	make DESTDIR=$PKG install
+}
