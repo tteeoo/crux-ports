@@ -1,6 +1,8 @@
 d:fish
+d:scientifica-ttf
 d:slop
 d:maim
-f:07d569de107b760ecacac19864138fc9:fish/Pkgfile
+f:6a466c6d0689a8b01d62f9d90a5954b7:fish/Pkgfile
+f:584578112d58404229d2bf453b4c871b:scientifica-ttf/Pkgfile
 f:32a66332870f8c53955afde9ec2efda5:slop/Pkgfile
 f:3cb876b812df7d391e83cab6c398029f:maim/Pkgfile
